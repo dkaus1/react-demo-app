@@ -1,7 +1,7 @@
 pipeline {
   environment {
     registry = "devesh13/myreactapp"
-    registryCredential = 'London@2019'
+    registryCredential = 'dockerhub'
     dockerImage = ''
   }
   agent any
