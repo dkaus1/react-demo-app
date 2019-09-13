@@ -1,7 +1,7 @@
 pipeline {
   environment {
-    registry = "mskhirwar/react-app-demo"
-    registryCredential = 'dockerhub'
+    registry = "devesh13/myreactapp"
+    registryCredential = 'London@2019'
     dockerImage = ''
   }
   agent any
@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/mskhirwar/react-demo-app.git'
+        git 'https://github.com/dkaus1/react-demo-app.git'
       }
     }
      stage('Install dependencies') {
